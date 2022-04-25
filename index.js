@@ -18,6 +18,9 @@ const setWeatherData = data => {
         pressure: data.main.pressure,
         temperature: data.main.temp,
         wind: data.wind.speed,
+        temp_max: data.main.temp_max,
+        temp_min: data.main.temp_min,
+        description2: data.weather[0].description,
         date:getDate(),
     }
 
